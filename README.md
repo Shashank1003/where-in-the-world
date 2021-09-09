@@ -1,70 +1,100 @@
-# Getting Started with Create React App
+# Frontend Mentor - REST Countries API with color theme switcher solution
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a solution to the [REST Countries API with color theme switcher challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## Available Scripts
+## Table of contents
 
-In the project directory, you can run:
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-### `yarn start`
+## Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### The challenge
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Users should be able to:
 
-### `yarn test`
+- See all countries from the API on the homepage
+- Search for a country using an `input` field
+- Filter countries by region
+- Click on a country to see more detailed information on a separate page
+- Click through to the border countries on the detail page
+- Toggle the color scheme between light and dark mode
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Screenshot
 
-### `yarn build`
+Desktop home-page (dark mode)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![](screenshots/DesktopGridDark.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Desktop home-page (light mode)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![](screenshots/DesktopGridLight.png)
 
-### `yarn eject`
+Desktop details page (dark mode)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+![](screenshots/DesktopDetailDark.png)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Desktop details page (light mode)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+![](screenshots/DesktopDetailLight.png)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Mobile home-page (dark mode)
 
-## Learn More
+![](screenshots/MobileGridDark.png)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Mobile home-page (light mode)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![](screenshots/MobileGridLight.png)
 
-### Code Splitting
+Mobile details page (dark mode)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+![](screenshots/MobileDetailDark.png)
 
-### Analyzing the Bundle Size
+Mobile details page (light mode)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+![](screenshots/MobileDetailLight.png)
 
-### Making a Progressive Web App
+### Links
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
-### Advanced Configuration
+## My process
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Built with
 
-### Deployment
+- Semantic HTML5 markup
+- Flexbox
+- [React](https://reactjs.org/) - JS library
+- [Styled Components](https://styled-components.com/) - For styles
+- [REST COUNTRIES](https://restcountries.eu/#api-endpoints-list-of-codes) - API
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### What I learned
 
-### `yarn build` fails to minify
+This is my first project where I used API to get data and display it on the site. I learned how to use endpoints and parameters according the need of the page. When you try to combine url by using props, don't use `"string" + {props.something} + "string"` as it won't properly format it as an url. Better example -
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```js
+let url = new URL(
+  String(props.country),
+  "https://restcountries.eu/rest/v2/name/"
+);
+url.searchParams.append("fullText", true);
+```
+
+### Useful resources
+
+- [Search Bar in React Tutorial](https://www.youtube.com/watch?v=x7niho285qs)
+
+## Author
+
+- Linkedin - [Shashank Gupta](https://www.linkedin.com/in/shashank-gupta-789609144/)
+- Frontend Mentor - [@Shashank1003](https://www.frontendmentor.io/profile/Shashank1003)

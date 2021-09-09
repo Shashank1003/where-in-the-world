@@ -1,0 +1,24 @@
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+  }
+
+  body {
+    overflow: scroll;
+    overflow-x: hidden;
+
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
+    scrollbar-width: none;
+    /* Firefox */
+
+    min-height: 100vh;
+    min-width: 100vw;
+  }
+
+  body::-webkit-scrollbar {
+    width: 0;
+    background-color: transparent;
+  }
