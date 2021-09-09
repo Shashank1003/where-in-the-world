@@ -32,21 +32,35 @@ Users should be able to:
 ### Screenshot
 
 - Desktop home-page (dark mode)
+- 
 ![](screenshots/DesktopGridDark.png)
 
 - Desktop home-page (light mode)
+- 
 ![](screenshots/DesktopGridLight.png)
 
 - Desktop details page (dark mode)
+- 
 ![](screenshots/DesktopDetailDark.png)
 
 - Desktop details page (light mode)
+- 
 ![](screenshots/DesktopDetailLight.png)
 
+- Mobile home-page (dark mode)
+- 
+![](screenshots/MobileGridDark.png)
+
+- Mobile home-page (light mode)
+- 
+![](screenshots/MobileGridLight.png)
+
 - Mobile details page (dark mode)
+- 
 ![](screenshots/MobileDetailDark.png)
 
 - Mobile details page (light mode)
+- 
 ![](screenshots/MobileDetailLight.png)
 
 ### Links
