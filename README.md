@@ -43,12 +43,6 @@ Users should be able to:
 - Desktop details page (light mode)
 ![](screenshots/DesktopDetailLight.png)
 
-- Mobile home-page (dark mode)
-![](screenshots/MobileGridDark.png)
-
-- Mobile home-page (light mode)
-![](screenshots/MobileGridLight.png)
-
 - Mobile details page (dark mode)
 ![](screenshots/MobileDetailDark.png)
 
