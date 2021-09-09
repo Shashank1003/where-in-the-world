@@ -7,7 +7,7 @@ const Container = styled.div`
   padding-bottom: 2rem;
 `;
 
-const BackButton = styled.button`
+const BackButton = styled.div`
   display: flex;
   width: 7.5rem;
   height: 2.5rem;
