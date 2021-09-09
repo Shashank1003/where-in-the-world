@@ -29,7 +29,7 @@ const Heading = styled.h1`
   }
 `;
 
-const ThemeButton = styled.button`
+const ThemeButton = styled.div`
   height: 3rem;
   width: 8.2rem;
   border: none;
