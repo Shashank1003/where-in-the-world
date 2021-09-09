@@ -88,6 +88,8 @@ let url = new URL(
   "https://restcountries.eu/rest/v2/name/"
 );
 url.searchParams.append("fullText", true);
+
+axios.get(url)
 ```
 
 ### Useful resources
